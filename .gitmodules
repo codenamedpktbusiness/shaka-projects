@@ -1,0 +1,12 @@
+[submodule "shaka-packager"]
+	path = shaka-packager
+	url = https://github.com/shaka-project/shaka-packager
+[submodule "shaka-player"]
+	path = shaka-player
+	url = https://github.com/shaka-project/shaka-player
+[submodule "shaka-player-embedded"]
+	path = shaka-player-embedded
+	url = https://github.com/shaka-project/shaka-player-embedded
+[submodule "shaka-streamer"]
+	path = shaka-streamer
+	url = https://github.com/shaka-project/shaka-streamer
