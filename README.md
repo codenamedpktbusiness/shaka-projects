@@ -4,6 +4,6 @@
 
 One click solution using one of git commands and clones the Shaka Projects you need.
 
-Only need to do is: git clone https://github.com/codenamedpkt/shaka-project --recursive
+Only need to do is: git clone https://github.com/codenamedpktbusiness/shaka-projects --recursive
 
 # Support me on my offical Instagram on @mrpoons.studio.
