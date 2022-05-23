@@ -1,0 +1,26 @@
+---
+name: Debug with Super Linter using Legacy CPU Runner
+on: workflow_dispatch
+jobs:
+  super-linter-debug:
+    runs-on: ubuntu-latest
+    steps:
+    ##########################
+    # Checkout the code base #
+    ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+    #####################################
+    # Full git history is needed to get #
+    #   a proper list of changed files  #
+    #      within `super-linter`        #
+    #####################################
+          fetch-depth: 0
+      - name: Super-Linter Debugger Tool
+        id: run-debug
+        uses: github/super-linter@v4.9.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: main
+          VALIDATE_ALL_CODEBASE: ture
